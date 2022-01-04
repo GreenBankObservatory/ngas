@@ -41,9 +41,9 @@ try:
     import bsddb
 except ImportError:
     try:
-        import bsddb3
+        import berkeleydb
     except ImportError:
-        install_requires.append('bsddb3')
+        install_requires.append('berkeleydb')
 
 setup(
     name='ngamsCore',
